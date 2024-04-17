@@ -1,0 +1,134 @@
+.conteudo {
+
+    position: relative;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.background{
+
+    position: fixed;
+    height: 90vh;
+    left: 0%;    
+    filter: opacity(.06) ;
+    transform: translate(-50%, 0%);
+    z-index: -1; 
+      
+}
+
+.info{
+
+    width: 60%;
+    margin-right: 90px;
+    margin-top: 40px;
+    color: white;
+}
+
+input{
+
+    border: 1px solid #999999 ;
+    border-radius: 22px;
+    min-width: 250px;
+    width: 75%;
+    margin-right: 12px;
+    background: transparent;
+    font-size: 18px;
+    padding: 10px;
+    color: #999999;
+    
+}
+
+button {
+
+    border: 1px solid #999999 ;
+    border-radius: 22px;
+    
+    
+    margin-right: 12px;
+    background: #20333B;
+    font-size: 18px;
+    padding: 10px;
+    color: white;
+}
+
+.perfil{
+
+    display: flex;
+    margin: 40px 0;
+    
+}
+
+.profile{
+
+    width: 5rem;
+    height: 5rem;
+    border-radius: 5rem;
+    border: 2px solid #E5E5E5 ;
+    margin-right: 32px;
+}
+
+.perfil h3 {
+
+    color: #999999;
+    font-size: 24px;
+    margin: 0;
+}
+
+.perfil span {
+ 
+    color: #999999;
+    font-size: 15px;
+    margin: 0;
+    
+}
+
+.perfil p {
+ 
+    color: #999999;
+    font-size: 15px;
+    margin-top: 20px;
+
+    
+}
+
+.repositorio {
+
+    font-size: 28px;
+    color: white;
+    margin: 12px 0;
+    text-align: center;
+}
+
+
+@media screen and (max-width:850px) {
+
+    .divisorMobile{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    input{
+
+        min-width: 200px;
+    }
+
+    .info{
+
+        margin-right: 0;
+    }
+
+    .conteudo{
+
+        justify-content: center;
+    }
+
+
+
+
+}
