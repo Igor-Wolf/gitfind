@@ -14,13 +14,13 @@ function App() {
   useEffect(() => {
 
     const storedUser = localStorage.getItem('githubUser');
-    
+
     if (storedUser) {
-      
+
       setUser(storedUser)
       handleGetData();
     }
-        
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleInputChange = (event) => {
@@ -75,7 +75,7 @@ function App() {
             <div className='perfil'>
               <img src={currentUser.avatar_url} className='profile' alt='profile'></img>
               <div>
-                <h3>{ currentUser.name}</h3>
+                <h3>{currentUser.name}</h3>
                 <span>{currentUser.login}</span>
                 <p>{currentUser.bio}</p>
 
@@ -86,24 +86,24 @@ function App() {
           ) : null}
 
           {repos?.length ? (<>
-            
-            
+
+
             <div>
               <h4 className='repositorio'>
                 Repositório
               </h4>
               {repos.map(repo => (
-                
-                <ItemList title={repo.name} link={repo.html_url} description= {repo.description}></ItemList>
+
+                <ItemList title={repo.name} link={repo.html_url} description={repo.description}></ItemList>
               ))}
-              
+
             </div>
-            </>
+          </>
           ) : null}
-          </div>
         </div>
       </div>
-      );
+    </div>
+  );
 }
 
-      export default App;
+export default App;
