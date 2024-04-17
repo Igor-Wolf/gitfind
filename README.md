@@ -5,5 +5,5 @@ Esse projeto tem por finalidade desenvolver um aplicativo simples de consulta ao
 ![Organização dos Arquivos](https://github.com/Igor-Wolf/gitfind/blob/main/demo.png?raw=true)
 
 
-A calculadora pode ser acessada [AQUI](https://igor-wolf.github.io/gitfind/)
+O programa pode ser acessado [AQUI](https://igor-wolf.github.io/gitfind/)
 
